@@ -1,4 +1,4 @@
-import { ISearchService, SearchResult } from './SearchService';
+import { type ISearchService, type SearchResult } from './SearchService';
 
 export class ResultsAggregator {
   constructor(private searchService: ISearchService) {}
