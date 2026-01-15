@@ -59,3 +59,4 @@ We are following a strict Test-Driven Development approach.
 ### Installation
 ```bash
 npm install
+```
