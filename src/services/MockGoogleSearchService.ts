@@ -1,10 +1,6 @@
-export interface SearchResult {
-  title: string;
-  link: string;
-  snippet: string;
-}
+import { ISearchService, SearchResult } from './SearchService';
 
-export class MockGoogleSearchService {
+export class MockGoogleSearchService implements ISearchService {
   async search(query: string): Promise<SearchResult[]> {
     // Simulate network delay
     await new Promise((resolve) => setTimeout(resolve, 500));
